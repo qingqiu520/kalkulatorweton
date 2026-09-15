@@ -2,7 +2,8 @@ import type { MetadataRoute } from "next";
 import { ALL_WETON, JODOH_CATEGORIES, KETEMU_RANGE } from "~/lib/weton";
 import { HARI_BAIK_TOPICS } from "~/lib/content";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://kalkulatorweton.com";
+const SITE =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.kalkulatorweton.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = ["", "/weton", "/jodoh", "/hari-baik", "/neptu", "/primbon"].map(
