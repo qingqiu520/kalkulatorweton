@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   },
   description:
     "Kalkulator weton Jawa gratis: hitung weton, neptu, dan kecocokan jodoh dari tanggal lahir. Berdasarkan hitungan primbon Jawa — tanpa daftar, hasil instan.",
+  verification: {
+    google: "n1acla19hg5RJmY-Jw3E1Ch724f_LRgrZT-RAXtkO6Y",
+  },
   openGraph: {
     siteName: "Kalkulator Weton",
     type: "website",
