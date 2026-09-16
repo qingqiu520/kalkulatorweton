@@ -68,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <footer className="border-t border-edge py-8 text-center text-sm text-amber-100/50">
           <div className="mb-2 flex justify-center gap-6">
+            <Link href="/tentang" className="hover:text-accent">Tentang</Link>
             <Link href="/primbon" className="hover:text-accent">Primbon</Link>
             <Link href="/privacy-policy" className="hover:text-accent">Privasi</Link>
             <a href="mailto:lelea031210@gmail.com" className="hover:text-accent">
