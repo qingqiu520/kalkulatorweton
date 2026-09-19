@@ -25,5 +25,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE}/hari-baik/${t.slug}`,
     changeFrequency: "monthly" as const,
   }));
-  return [...staticPages, ...wetonPages, ...jodohCats, ...ketemus, ...hariBaik];
+  const neptuPages = Array.from({ length: 11 }, (_, i) => ({
+    url: `${SITE}/neptu/${i + 8}`,
+    changeFrequency: "monthly" as const,
+  }));
+  return [
+    ...staticPages,
+    ...wetonPages,
+    ...jodohCats,
+    ...ketemus,
+    ...hariBaik,
+    ...neptuPages,
+  ];
 }

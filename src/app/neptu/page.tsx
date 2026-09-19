@@ -52,6 +52,23 @@ export default function NeptuPage() {
         </div>
       </div>
 
+      <div className="card mt-8 p-5">
+        <h2 className="mb-3 font-semibold text-white">
+          Cari Weton Berdasarkan Neptu
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {Array.from({ length: 11 }, (_, i) => (
+            <Link
+              key={i}
+              href={`/neptu/${i + 8}`}
+              className="rounded-lg border border-edge bg-ink px-3 py-1.5 text-sm text-accent hover:border-accent"
+            >
+              Neptu {i + 8}
+            </Link>
+          ))}
+        </div>
+      </div>
+
       <div className="card mt-8 p-5 text-sm text-amber-100/75">
         <h2 className="mb-2 font-semibold text-white">Contoh Perhitungan</h2>
         <p>
