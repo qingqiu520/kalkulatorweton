@@ -184,6 +184,62 @@ export const HARI_BAIK_TOPICS: HariBaikTopic[] = [
     ],
   },
   {
+    slug: "membangun-rumah",
+    title: "Hari Baik Membangun Rumah",
+    keyword: "hari baik membangun rumah menurut primbon jawa",
+    desc: "Memulai pembangunan rumah menurut primbon Jawa adalah momen besar — peletakan batu pertama baiknya jatuh pada hari dengan neptu besar yang selaras dengan weton kepala keluarga. Hari Kamis dan pasaran Pahing sering dipilih untuk fondasi yang 'kuat'.",
+    tips: [
+      "Hitung weton kepala keluarga sebagai acuan utama, bukan weton tukang atau kontraktor.",
+      "Pahing (neptu 9) sering dipilih agar rumah 'kokoh' seperti energinya.",
+      "Sebagian tradisi menghindari pasaran Wage untuk memulai pembangunan.",
+      "Arah hadap rumah juga diperhitungkan dalam primbon — konsultasikan ke sesepuh bila ragu.",
+    ],
+  },
+  {
+    slug: "lamaran",
+    title: "Hari Baik Lamaran",
+    keyword: "hari baik lamaran menurut primbon jawa",
+    desc: "Lamaran adalah pintu menuju pernikahan — menurut primbon Jawa, tanggal lamaran baiknya sudah mulai diselaraskan dengan weton kedua calon. Pasaran Legi yang 'manis' sering dipilih agar prosesi berjalan lancar dan disambut baik kedua keluarga.",
+    tips: [
+      "Mulai hitung neptu kedua calon sejak tahap lamaran, bukan baru saat menikah.",
+      "Legi identik dengan penerimaan dan kemanisan — cocok untuk pertemuan dua keluarga.",
+      "Hasil hitungan kategori Jodoh atau Ratu dianggap awal yang baik.",
+    ],
+  },
+  {
+    slug: "khitan",
+    title: "Hari Baik Khitan",
+    keyword: "hari baik khitan menurut primbon jawa",
+    desc: "Khitanan adalah acara besar dalam tradisi Jawa-Islam — pemilihan harinya menurut primbon diselaraskan dengan weton anak, agar prosesnya lancar dan pemulihannya cepat. Banyak keluarga memilih pasaran Legi atau hari Jumat yang dianggap bertuah.",
+    tips: [
+      "Acuan utamanya adalah weton anak yang akan dikhitan, bukan weton orang tua.",
+      "Jumat dan Legi sering dipilih karena dianggap membawa berkah.",
+      "Gabungkan dengan pertimbangan medis dan jadwal dokter — hari baik adalah pelengkap.",
+    ],
+  },
+  {
+    slug: "aqiqah",
+    title: "Hari Baik Aqiqah",
+    keyword: "hari baik aqiqah menurut primbon jawa",
+    desc: "Aqiqah untuk bayi baru lahir dalam tradisi Jawa-Islam sering dijadwalkan pada hari ketujuh, tetapi bila jatuh di tanggal lain, keluarga primbon memilih hari yang selaras dengan weton sang bayi agar acara membawa berkah.",
+    tips: [
+      "Hitung weton bayi dari tanggal lahirnya dengan kalkulator di atas.",
+      "Bila aqiqah tidak bisa di hari ketujuh, pilih tanggal dengan pasaran Legi atau Pahing.",
+      "Selaraskan juga dengan weton kedua orang tua bila keluarga menghendaki.",
+    ],
+  },
+  {
+    slug: "bepergian-jauh",
+    title: "Hari Baik Bepergian Jauh",
+    keyword: "hari baik bepergian menurut primbon jawa",
+    desc: "Merantau, mudik, atau perjalanan jauh menurut primbon Jawa baiknya dimulai pada hari yang 'ringan' untuk weton Anda — tujuannya keselamatan di jalan dan kelancaran di tempat tujuan. Pasaran Kliwon dan hari Rabu sering disebut baik untuk memulai perjalanan.",
+    tips: [
+      "Hitung weton Anda, lalu hindari memulai perjalanan pada hari yang hitungannya 'bentrok' dengan weton.",
+      "Rabu (energi 'daun', luwes) dan Kliwon dipercaya melindungi perjalanan.",
+      "Untuk merantau, sebagian tradisi juga memperhitungkan arah tujuan perjalanan.",
+    ],
+  },
+  {
     slug: "potong-rambut-kuku",
     title: "Hari Baik Potong Rambut & Kuku",
     keyword: "hari baik potong rambut potong kuku menurut islam dan primbon",
