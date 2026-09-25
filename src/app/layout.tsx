@@ -58,7 +58,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <header className="border-b border-edge">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-            <Link href="/" className="text-lg font-bold text-accent">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-lg font-bold text-accent"
+            >
+              <svg
+                viewBox="0 0 64 64"
+                className="h-7 w-7"
+                aria-hidden="true"
+              >
+                <circle cx="32" cy="32" r="17" fill="none" stroke="currentColor" strokeWidth="4" />
+                <g stroke="currentColor" strokeWidth="4" strokeLinecap="round">
+                  <line x1="32" y1="7" x2="32" y2="14" />
+                  <line x1="32" y1="50" x2="32" y2="57" />
+                  <line x1="7" y1="32" x2="14" y2="32" />
+                  <line x1="50" y1="32" x2="57" y2="32" />
+                  <line x1="14.3" y1="14.3" x2="19.2" y2="19.2" />
+                  <line x1="44.8" y1="44.8" x2="49.7" y2="49.7" />
+                  <line x1="49.7" y1="14.3" x2="44.8" y2="19.2" />
+                  <line x1="19.2" y1="44.8" x2="14.3" y2="49.7" />
+                </g>
+                <circle cx="32" cy="32" r="5" fill="currentColor" />
+              </svg>
               KalkulatorWeton
             </Link>
             <div className="flex items-center gap-4 text-sm text-amber-100/70">
