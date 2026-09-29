@@ -2,7 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import WetonCalculator from "~/components/WetonCalculator";
-import { ALL_WETON, NEPTU_HARI, NEPTU_PASARAN, wetonFromSlug } from "~/lib/weton";
+import {
+  ALL_WETON,
+  HARI_JAWA,
+  NEPTU_HARI,
+  NEPTU_PASARAN,
+  wetonFromSlug,
+} from "~/lib/weton";
 import { WATAK_HARI, WATAK_PASARAN, WETON_KHUSUS } from "~/lib/content";
 
 export function generateStaticParams() {
@@ -46,9 +52,13 @@ export default async function WetonPage({
       <h1 className="mb-2 mt-2 text-4xl font-bold text-white">
         Weton {w.label}
       </h1>
-      <p className="mb-8 text-lg text-amber-100/70">
+      <p className="mb-2 text-lg text-amber-100/70">
         Neptu {w.neptu} = {w.hari} {NEPTU_HARI[w.hari]} + {w.pasaran}{" "}
         {NEPTU_PASARAN[w.pasaran]}
+      </p>
+      <p className="mb-8 text-sm text-amber-100/50">
+        Dalam bahasa Jawa, {w.label} juga ditulis &ldquo;{HARI_JAWA[w.hari]}{" "}
+        {w.pasaran}&rdquo; — keduanya merujuk pada weton yang sama.
       </p>
 
       <div className="card mb-6 p-6">

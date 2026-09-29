@@ -16,7 +16,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const t = HARI_BAIK_TOPICS.find((x) => x.slug === slug);
   if (!t) return {};
-  return { title: `${t.title} Menurut Primbon Jawa`, description: t.desc };
+  return {
+    title: `${t.title} 2026 — Hitung Gratis Menurut Primbon Jawa`,
+    description: t.desc,
+  };
 }
 
 export default async function HariBaikPage({

@@ -78,6 +78,17 @@ export function wetonFromSlug(slug: string): Weton | null {
   };
 }
 
+// 爪哇口语里的星期拼写变体（Minggu→Ahad 等），用于覆盖变体搜索词。
+export const HARI_JAWA: Record<Hari, string> = {
+  Minggu: "Ahad",
+  Senin: "Senen",
+  Selasa: "Slasa",
+  Rabu: "Rebo",
+  Kamis: "Kemis",
+  Jumat: "Jemuah",
+  Sabtu: "Setu",
+};
+
 export const ALL_WETON: Weton[] = HARI.flatMap((hari) =>
   PASARAN.map((pasaran) => ({
     hari,
