@@ -48,8 +48,8 @@ export interface Weton {
   label: string; // "Senin Pahing"
 }
 
-export function getWeton(date: Date): Weton {
-  const utc = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+function getWetonFromParts(year: number, month: number, day: number): Weton {
+  const utc = Date.UTC(year, month - 1, day);
   const hari = HARI[new Date(utc).getUTCDay()];
   const diff = Math.round((utc - ANCHOR) / DAY_MS);
   const idx = (((ANCHOR_PASARAN_INDEX + diff) % 5) + 5) % 5;
@@ -62,6 +62,32 @@ export function getWeton(date: Date): Weton {
     slug: `${hari.toLowerCase()}-${pasaran.toLowerCase()}`,
     label: `${hari} ${pasaran}`,
   };
+}
+
+export function getWeton(date: Date): Weton {
+  return getWetonFromParts(date.getFullYear(), date.getMonth() + 1, date.getDate());
+}
+
+export function getWetonHariIni(): Weton {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Jakarta",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return getWetonFromParts(
+    Number(values.year),
+    Number(values.month),
+    Number(values.day),
+  );
+}
+
+export function getTanggalJakarta(): string {
+  return new Intl.DateTimeFormat("id-ID", {
+    timeZone: "Asia/Jakarta",
+    dateStyle: "full",
+  }).format(new Date());
 }
 
 export function wetonFromSlug(slug: string): Weton | null {

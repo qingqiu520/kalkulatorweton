@@ -29,8 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE}/neptu/${i + 8}`,
     changeFrequency: "monthly" as const,
   }));
+  const todayPage = {
+    url: `${SITE}/weton-hari-ini`,
+    changeFrequency: "daily" as const,
+  };
   return [
     ...staticPages,
+    todayPage,
     ...wetonPages,
     ...jodohCats,
     ...ketemus,

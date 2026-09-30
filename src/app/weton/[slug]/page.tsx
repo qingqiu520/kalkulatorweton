@@ -39,7 +39,14 @@ export default async function WetonPage({
   if (!w) notFound();
 
   const khusus = WETON_KHUSUS[w.slug];
-  const others = ALL_WETON.filter((x) => x.slug !== w.slug).slice(0, 10);
+  const relatedScore = (candidate: (typeof ALL_WETON)[number]) =>
+    (candidate.hari === w.hari ? 3 : 0) +
+    (candidate.pasaran === w.pasaran ? 2 : 0) +
+    (candidate.neptu === w.neptu ? 1 : 0);
+  const others = ALL_WETON
+    .filter((x) => x.slug !== w.slug)
+    .sort((a, b) => relatedScore(b) - relatedScore(a) || a.label.localeCompare(b.label))
+    .slice(0, 10);
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
@@ -94,7 +101,7 @@ export default async function WetonPage({
         <WetonCalculator />
       </div>
 
-      <h2 className="mb-4 text-lg font-bold text-white">Weton Lainnya</h2>
+      <h2 className="mb-4 text-lg font-bold text-white">Weton yang Berkaitan</h2>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
         {others.map((x) => (
           <Link key={x.slug} href={`/weton/${x.slug}`} className="card px-3 py-2 text-center text-sm">

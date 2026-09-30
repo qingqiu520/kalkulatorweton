@@ -17,7 +17,7 @@ export async function generateMetadata({
   const t = HARI_BAIK_TOPICS.find((x) => x.slug === slug);
   if (!t) return {};
   return {
-    title: `${t.title} 2026 — Hitung Gratis Menurut Primbon Jawa`,
+    title: `${t.title} — Hitung Gratis Menurut Primbon Jawa`,
     description: t.desc,
   };
 }

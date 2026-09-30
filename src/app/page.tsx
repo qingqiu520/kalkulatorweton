@@ -79,6 +79,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-4xl px-4 py-10">
+        <h2 className="mb-6 text-2xl font-bold text-white">Jelajahi Kalkulator Weton</h2>
+        <div className="grid gap-3 sm:grid-cols-3">
+          <Link href="/jodoh" className="card block p-5">
+            <h3 className="font-semibold text-accent">Kalkulator Weton Jodoh</h3>
+            <p className="mt-2 text-sm text-amber-100/70">
+              Hitung kecocokan pasangan dari tanggal lahir dan neptu.
+            </p>
+          </Link>
+          <Link href="/hari-baik" className="card block p-5">
+            <h3 className="font-semibold text-accent">Hari Baik Menurut Primbon</h3>
+            <p className="mt-2 text-sm text-amber-100/70">
+              Cari panduan hari baik untuk menikah, mulai kerja, usaha, dan acara penting.
+            </p>
+          </Link>
+          <Link href="/neptu" className="card block p-5">
+            <h3 className="font-semibold text-accent">Daftar Neptu</h3>
+            <p className="mt-2 text-sm text-amber-100/70">
+              Lihat weton apa saja yang memiliki neptu tertentu dan cara menghitungnya.
+            </p>
+          </Link>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-3xl px-4 py-10">
         <h2 className="mb-6 text-2xl font-bold text-white">Pertanyaan Umum</h2>
         <div className="space-y-4">

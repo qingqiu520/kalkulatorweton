@@ -6,7 +6,7 @@ import { JODOH_CATEGORIES, KETEMU_RANGE } from "~/lib/weton";
 export const metadata: Metadata = {
   title: "Kalkulator Weton Jodoh — Hitung Kecocokan Pasangan Online",
   description:
-    "Hitung kecocokan jodoh Anda dan pasangan dari tanggal lahir. Hasil kategori: Pegat, Ratu, Jodoh, Topo, Tinari, Padu, Sujanan, Pesthi — menurut primbon Jawa.",
+    "Hitung kecocokan jodoh pasangan dari tanggal lahir, weton, dan neptu. Lihat arti Pegat, Ratu, Jodoh, Topo, Tinari, Padu, Sujanan, dan Pesthi menurut primbon Jawa.",
 };
 
 export default function JodohIndex() {

@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { n } = await params;
   return {
     title: `Neptu ${n} — Weton Apa Saja yang Berneptu ${n}?`,
-    description: `Daftar weton dengan neptu ${n} menurut primbon Jawa, beserta makna dan cara menghitungnya.`,
+    description: `Weton apa saja yang memiliki neptu ${n}? Lihat daftar, arti neptu ${n}, cara menghitungnya, dan kaitannya dengan kecocokan jodoh menurut primbon Jawa.`,
   };
 }
 
@@ -86,7 +86,7 @@ export default async function NeptuDetail({
         </p>
       </div>
 
-      <h2 className="mb-3 text-lg font-bold text-white">Neptu Lainnya</h2>
+      <h2 className="mb-3 text-lg font-bold text-white">Arti Neptu {num} dan Neptu Lainnya</h2>
       <div className="flex flex-wrap gap-2">
         {others.map((x) => (
           <Link key={x} href={`/neptu/${x}`} className="card px-3 py-1.5 text-sm">

@@ -163,9 +163,9 @@ export const HARI_BAIK_TOPICS: HariBaikTopic[] = [
   },
   {
     slug: "membeli-kendaraan",
-    title: "Hari Baik Membeli Kendaraan",
+    title: "Hari Baik Beli Kendaraan Menurut Primbon Jawa",
     keyword: "hari baik beli kendaraan menurut primbon jawa",
-    desc: "Membeli kendaraan atau barang besar menurut primbon Jawa sebaiknya dilakukan pada hari yang selaras dengan weton pembeli — banyak keluarga Jawa percaya kendaraan yang 'cocok hari belinya' lebih awet dan membawa keselamatan.",
+    desc: "Cari hari baik beli motor, mobil, atau kendaraan lain menurut primbon Jawa. Pilih tanggal yang selaras dengan weton pembeli sambil tetap memeriksa kondisi kendaraan dan keselamatan berkendara.",
     tips: [
       "Hitung weton Anda, lalu pilih tanggal dengan pasaran Legi atau Pahing untuk pembelian besar.",
       "Sebagian tradisi menghindari pasaran Pon untuk transaksi besar.",
@@ -174,9 +174,9 @@ export const HARI_BAIK_TOPICS: HariBaikTopic[] = [
   },
   {
     slug: "memulai-pekerjaan",
-    title: "Hari Baik Memulai Pekerjaan Baru",
-    keyword: "hari baik memulai pekerjaan menurut primbon jawa",
-    desc: "Hari pertama kerja atau memulai jabatan baru menurut primbon Jawa baiknya dipilih pada hari yang memperkuat watak weton Anda — misalnya Kamis untuk karier yang butuh wawasan, atau Senin untuk peran yang butuh kelembutan dan relasi.",
+    title: "Hari Baik Mulai Kerja Menurut Primbon Jawa",
+    keyword: "hari baik mulai kerja menurut primbon jawa",
+    desc: "Cari hari baik mulai kerja, masuk kantor, atau memulai jabatan baru menurut primbon Jawa. Gunakan weton sebagai pertimbangan tradisi, sekaligus siapkan pekerjaan dan jadwal dengan baik.",
     tips: [
       "Sesuaikan hari mulai dengan karakter weton dan bidang pekerjaan.",
       "Pahing dan Kliwon dianggap kuat untuk peran kepemimpinan dan spiritual.",
