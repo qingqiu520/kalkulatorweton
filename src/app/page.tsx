@@ -22,7 +22,8 @@ export default function Home() {
           Kalkulator Weton Jawa Online
         </h1>
         <p className="mb-8 text-lg text-amber-100/70">
-          Hitung weton, neptu, dan kecocokan jodoh dari tanggal lahir — berdasarkan
+          Hitung weton, neptu, dan kecocokan jodoh dari tanggal lahir. Gunakan
+          kalkulator neptu Jawa untuk melihat nilai hari dan pasaran berdasarkan
           hitungan primbon Jawa. Gratis, instan, tanpa daftar.
         </p>
         <div className="text-left">

@@ -3,21 +3,33 @@ import Link from "next/link";
 import { HARI, NEPTU_HARI, NEPTU_PASARAN, PASARAN } from "~/lib/weton";
 
 export const metadata: Metadata = {
-  title: "Tabel Neptu Jawa — Nilai Hari dan Pasaran dalam Primbon",
+  title: "Kalkulator Neptu Jawa — Tabel Neptu Hari & Pasaran",
   description:
-    "Tabel neptu lengkap: nilai hari (Minggu 5, Senin 4, Selasa 3, Rabu 7, Kamis 8, Jumat 6, Sabtu 9) dan pasaran (Legi 5, Pahing 9, Pon 7, Wage 4, Kliwon 8).",
+    "Lihat tabel neptu Jawa lengkap dan hitung neptu dari tanggal lahir melalui kalkulator weton. Cek nilai hari, pasaran, dan contoh perhitungan primbon.",
 };
 
 export default function NeptuPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="mb-4 text-3xl font-bold text-white">
-        Tabel Neptu Hari & Pasaran
+        Kalkulator Neptu Jawa & Tabel Neptu
       </h1>
-      <p className="mb-8 text-amber-100/70">
-        Neptu adalah nilai angka setiap hari dan pasaran. Jumlah keduanya = neptu
-        weton Anda, dasar semua hitungan primbon Jawa.
+      <p className="mb-4 text-amber-100/70">
+        Neptu adalah nilai angka setiap hari dan pasaran. Jumlah keduanya menjadi
+        neptu weton Anda, dasar berbagai hitungan primbon Jawa.
       </p>
+      <div className="card mb-8 flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-amber-100/75">
+          Ingin menghitung neptu langsung dari tanggal lahir? Gunakan kalkulator
+          weton gratis di halaman utama.
+        </p>
+        <Link
+          href="/"
+          className="shrink-0 rounded-lg bg-accent px-4 py-2 text-center text-sm font-semibold text-ink hover:opacity-90"
+        >
+          Buka Kalkulator Weton →
+        </Link>
+      </div>
 
       <div className="grid gap-6 md:grid-cols-2">
         <div className="card p-5">
