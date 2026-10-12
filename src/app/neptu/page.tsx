@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import WetonCalculator from "~/components/WetonCalculator";
 import { HARI, NEPTU_HARI, NEPTU_PASARAN, PASARAN } from "~/lib/weton";
 
 export const metadata: Metadata = {
-  title: "Kalkulator Neptu Jawa — Tabel Neptu Hari & Pasaran",
+  title: "Kalkulator Neptu Jawa — Hitung dari Tanggal Lahir",
   description:
-    "Lihat tabel neptu Jawa lengkap dan hitung neptu dari tanggal lahir melalui kalkulator weton. Cek nilai hari, pasaran, dan contoh perhitungan primbon.",
+    "Hitung neptu Jawa dari tanggal lahir langsung di halaman ini. Lihat hari, pasaran, rincian penjumlahan, serta tabel neptu dan contoh perhitungan.",
+  alternates: { canonical: "/neptu" },
 };
 
 export default function NeptuPage() {
@@ -15,21 +17,21 @@ export default function NeptuPage() {
         Kalkulator Neptu Jawa & Tabel Neptu
       </h1>
       <p className="mb-4 text-amber-100/70">
-        Neptu adalah nilai angka setiap hari dan pasaran. Jumlah keduanya menjadi
-        neptu weton Anda, dasar berbagai hitungan primbon Jawa.
+        Hitung neptu Jawa dari tanggal lahir Anda tanpa pindah halaman. Kalkulator
+        neptu ini menampilkan hari, pasaran, dan penjumlahan keduanya. Neptu adalah
+        nilai angka hari dan pasaran yang digunakan dalam tradisi primbon Jawa.
       </p>
-      <div className="card mb-8 flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-amber-100/75">
-          Ingin menghitung neptu langsung dari tanggal lahir? Gunakan kalkulator
-          weton gratis di halaman utama.
+      <section className="mb-8" aria-labelledby="hitung-neptu">
+        <h2 id="hitung-neptu" className="mb-4 text-xl font-semibold text-white">
+          Hitung Neptu dari Tanggal Lahir
+        </h2>
+        <WetonCalculator mode="neptu" />
+        <p className="mt-3 text-sm text-amber-100/65">
+          Perhitungan berjalan di browser tanpa mengirim tanggal lahir ke server.
+          Hasil primbon adalah informasi budaya, bukan kepastian tentang nasib
+          atau kecocokan pasangan.
         </p>
-        <Link
-          href="/"
-          className="shrink-0 rounded-lg bg-accent px-4 py-2 text-center text-sm font-semibold text-ink hover:opacity-90"
-        >
-          Buka Kalkulator Weton →
-        </Link>
-      </div>
+      </section>
 
       <div className="grid gap-6 md:grid-cols-2">
         <div className="card p-5">
@@ -80,6 +82,20 @@ export default function NeptuPage() {
           ))}
         </div>
       </div>
+
+      <section className="mt-8 text-amber-100/75">
+        <h2 className="mb-3 text-xl font-semibold text-white">Cara Menghitung Neptu</h2>
+        <ol className="list-decimal space-y-2 pl-5">
+          <li>Masukkan tanggal lahir dan pilih Hitung Neptu.</li>
+          <li>Lihat hari dan pasaran yang ditampilkan dalam hasil.</li>
+          <li>Jumlahkan nilai hari dengan nilai pasaran, misalnya Senin 4 + Pahing 9 = 13.</li>
+        </ol>
+        <p className="mt-4">
+          Jika hari dan pasaran sudah diketahui, gunakan dua tabel di atas untuk
+          memeriksa penjumlahannya. Untuk menghitung dua tanggal, gunakan{" "}
+          <Link href="/jodoh" className="text-accent underline">kalkulator weton jodoh</Link>.
+        </p>
+      </section>
 
       <div className="card mt-8 p-5 text-sm text-amber-100/75">
         <h2 className="mb-2 font-semibold text-white">Contoh Perhitungan</h2>
